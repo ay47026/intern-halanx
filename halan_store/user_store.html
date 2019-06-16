@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+<div class="container"  style="padding-left: 10px; box-shadow: 5px 5px 5px lightgray;  border-bottom: 2px solid #262626;margin-bottom: 20px;width: 100%" >
+
+    <div class="col-6" style="color: #E52222;font-family: sans-serif ; width: 50%;float: left"  >
+        <div style="float: left"><img src="image/halanx_logo.png" style="width: 40px;height: 60px;"></div> <div style="float: left"><h1> Hanalx store </h1></div>
+    </div>
+     <div class="col-6" style="width: 50%;text-align: right;font-family: sans-serif;color: #E52222;float: left;padding-left: : 20px;">
+         <h3 style="cursor: pointer"  onclick="logout()">Logout</h3>
+    </div>
+    
+    </div>
+    <div id="dasboard">
+        <div id="left_das"> <h1  style="color: #E52222;font-family: sans-serif ; width: 50%;float: left">Dasboard</h1></div>
+        <div id="right_das">
+        
+           <div id="open_store">
+               <div id="open_time">
+                   <h1>Store Opening Time</h1>
+                    <h1 id="time"> 10pm to 5pm</h1>
+                   <h3 onclick="change_time_dis()" id="change_time_dis">Change Store Opening Time </h3>
+                   <div id="row" style="display: none">
+                   <div id="one">
+                   <div id="time_change">
+                      <h3 id="x">5pm</h3>
+                   </div>
+                   <div id="time_change"> <button type="button" id="x_inc">+</button>
+                    <button type="button" id="x_dec">-</button>
+                   </div>
+                   </div>
+                       <div id="two">
+                   <div id="time_change">
+                       <h3 > To</h3>
+                   </div>
+                  
+                   </div>
+                       <div id="three">
+                   <div id="time_change">
+                      
+                       <h3 id="y">5pm</h3>
+                   </div>
+                   <div id="time_change"> <button type="button" id="y_inc">+</button>
+                    <button type="button"id="y_dec">-</button>
+                   </div>
+                   </div>
+                         <div id="four" >
+                   <div id="time_change" onclick="change_time_hide()">
+                       <h3 style="border: 1px solid #262626;text-align: center;cursor: pointer"> Ok</h3>
+                   </div>
+                  
+                   </div>
+                   </div>
+                   
+                  
+               </div>
+               
+            <div id="open_time_img">
+                <img src="image/store.jpg">
+               </div>
+            </div>
+             <div id="graph">
+            <div id="row">
+            
+                <div id="col_left">
+                
+                    <h1>Number of people visited vs Date Graph</h1>
+            
+                     <div id="row">
+                   <div id="one">
+                   <div id="time_change">
+                      <h3>Last</h3>
+                   </div>
+                  
+                   </div>
+                       <div id="two">
+                   <div id="time_change">
+                       <h3 id="ld">10</h3>
+                   </div>
+                           
+                  <div id="time_change"> <button type="button" id="y_in">+</button>
+                    <button type="button"id="y_de">-</button>
+                   </div>
+                           
+                       <div id="three">
+                   <div id="time_change">
+                       <h3>days</h3>
+                   </div>
+                   
+                   </div>
+                   </div>
+                     
+                   </div>
+                   
+                  
+                    
+                    
+                    
+                </div>
+                <div id="col_right">
+                    
+                 <div id="col_ll">
+                     <div id="col_l">
+                    
+                    </div>
+                      <div id="col_lb">
+                    
+                    </div>
+                    </div>
+                    
+                     <div id="col_r">
+                      <div id="row_top">
+                       
+                    </div>
+                         <div id="row_bottom">
+                    </div>
+                    </div>
+                
+                </div>
+            </div></div>
+    
+        </div>    
+    </div>
+
+           <script src="js/secure.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
